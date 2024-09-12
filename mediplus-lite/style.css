@@ -1,8 +1,7 @@
 /* =====================================
-Template Name: 	Mediplus.
-Author Name: Naimur Rahman
+Author Name : Simphiwe Nhlapo
 Website: http://wpthemesgrid.com/
-Description: Mediplus - Doctor HTML Template.
+Description: OosRand HighSchool
 Version:	1.1
 ========================================*/   
 /*======================================
@@ -477,7 +476,7 @@ body{
 /* Right Bar */
 .header.style2 .main-menu{
 	display:inline-block;
-	float:left;
+	
 }
 .header .right-bar {
 	float: right;
@@ -582,64 +581,77 @@ body{
 	height: 600px;
 	background-size: cover;
 	background-position: top center;
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 }
-.slider .single-slider .text{
-	margin-top:120px;
+
+.slider .single-slider .text {
+	margin-top: 120px;
 }
-.slider.index2 .single-slider .text{
-	margin-top:150px;
+
+.slider.index2 .single-slider .text {
+	margin-top: 150px;
 }
+
+/* Ensure consistent color for all sliders */
 .slider .single-slider h1 {
-	color: #000000;
+	color: #000000; /* Text color for headings */
 	font-size: 38px;
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
 	line-height: 42px;
 }
-.slider .single-slider h1 span{
-	color:#FFD700;
+
+.slider .single-slider h1 span {
+	color: #FFD700; /* Consistent gold color */
 }
+
 .slider .single-slider p {
-	color: #000000;
+	color: #000000; /* Text color for paragraphs */
 	margin-top: 27px;
 	font-weight: 400;
 }
-.slider .single-slider .button{
-	margin-top:30px;
+
+.slider .single-slider .button {
+	margin-top: 30px;
 }
-.slider .single-slider .btn{
-	color:#fff;
-	background:#1a76d1;
-	font-weight:500;
-	display:inline-block;
-	margin:0;
-	margin-right:10px;
+
+.slider .single-slider .btn {
+	color: #fff;
+	background: #1a76d1; /* Button background color */
+	font-weight: 500;
+	display: inline-block;
+	margin: 0;
+	margin-right: 10px;
 }
-.slider .single-slider .btn:last-child{
-	margin:0;
+
+.slider .single-slider .btn:last-child {
+	margin: 0;
 }
-.slider .single-slider .btn.primary{
-	background:#2C2D3F;
-	color:#fff;
+
+.slider .single-slider .btn.primary {
+	background: #2C2D3F; /* Primary button background color */
+	color: #fff;
 }
-.slider .single-slider .btn.primary:before{
-	background:#1A76D1;
+
+.slider .single-slider .btn.primary:before {
+	background: #1A76D1; /* Primary button before pseudo-element background color */
 }
+
 .slider .owl-carousel .owl-nav {
 	margin: 0;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-	margin-top:-25px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -25px;
 }
+
 .slider .owl-carousel .owl-nav div {
 	height: 50px;
 	width: 50px;
 	line-height: 50px;
 	text-align: center;
-	background: #1A76D1;
+	background: #1A76D1; /* Navigation background color */
 	color: #fff;
 	font-size: 26px;
 	position: absolute;
@@ -650,30 +662,36 @@ body{
 	padding: 0;
 	border-radius: 50%;
 }
-.slider .owl-carousel .owl-nav div:hover{
-	background:#2C2D3F;
-	color:#fff;
+
+.slider .owl-carousel .owl-nav div:hover {
+	background: #2C2D3F; /* Navigation hover background color */
+	color: #fff;
 }
-.slider .owl-carousel .owl-controls .owl-nav .owl-prev{
-	left:20px;
+
+.slider .owl-carousel .owl-controls .owl-nav .owl-prev {
+	left: 20px;
 }
-.slider .owl-carousel .owl-controls .owl-nav .owl-next{
-	right:20px;
+
+.slider .owl-carousel .owl-controls .owl-nav .owl-next {
+	right: 20px;
 }
 
 /* Slider Animation */
-.owl-item.active .single-slider h1{
-    animation: fadeInUp 1s both 0.6s;
+.owl-item.active .single-slider h1 {
+	animation: fadeInUp 1s both 0.6s;
 }
-.owl-item.active .single-slider p{
-    animation: fadeInUp 1s both 1s;
+
+.owl-item.active .single-slider p {
+	animation: fadeInUp 1s both 1s;
 }
-.owl-item.active .single-slider .button{
-    animation: fadeInDown 1s both 1.5s;
+
+.owl-item.active .single-slider .button {
+	animation: fadeInDown 1s both 1.5s;
 }
 /*===========================
 	End Hero Area CSS
 =============================*/
+
 
 /*=============================
 	Start Schedule CSS
