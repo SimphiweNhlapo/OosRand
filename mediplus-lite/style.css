@@ -283,10 +283,18 @@ body{
 }
 .header .logo {
     float: left;
-    margin-top: 18px;
-    width: 100px; /* Adjust the width as needed */
+    margin-top: 10px; /* Adjusted margin to align logo better with navbar */
+    width: 80px; /* Adjusted width to make the logo smaller */
     height: auto; /* Maintain aspect ratio */
 }
+
+@media (max-width: 768px) {
+    .header .logo {
+        width: 60px; /* Smaller logo on smaller screens */
+        margin-top: 8px;
+    }
+}
+
 
 .header .navbar {
 	background: none;
@@ -355,7 +363,9 @@ body{
 	border-top: 1px solid #eee;
 }
 .header.style2 .logo {
-	margin-top:6px;
+    margin-top: 8px; /* Slightly adjusted margin for style2 header */
+    width: 80px; /* Ensures consistency in logo size */
+    height: auto; /* Maintain aspect ratio */
 }
 .header .middle-header {
 	background: #fff;
@@ -376,10 +386,12 @@ body{
 .header .single-widget:last-child{
 	margin:0;
 }
-.header .single-widget .logo{
-	margin:0;
-	padding:0;
-	margin-top: 7px;
+.header .single-widget .logo {
+    margin: 0;
+    padding: 0;
+    margin-top: 8px; /* Adjusted margin to fit within the widget area */
+    width: 80px; /* Ensures consistency in logo size */
+    height: auto; /* Maintain aspect ratio */
 }
 .header .single-widget i {
 	position: absolute;
