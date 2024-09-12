@@ -1,0 +1,56 @@
+.calendar {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+    gap: 0px;
+}
+
+.day {
+    border: 1px solid #ddd;
+    padding: 13px;
+    text-align: center;
+    position: relative;
+    aspect-ratio: 1 / 1; /* Ensures each day block is a square */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event {
+    background-color: #ffeb3b;
+    color: #272626;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.current-month {
+    font-weight: bold;
+}
+
+.header {
+    grid-column: span 7;
+    text-align: center;
+    font-size: 1.5em;
+}
+  h3{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  @media (max-width: 400px) {
+    .calendar {
+        grid-template-columns: repeat(3, 1fr); 
+        width: 400px;
+    }
+}
+
+  .today {
+    background-color: #ffeb3b;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #fbc02d;
+  }
