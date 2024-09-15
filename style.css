@@ -292,10 +292,20 @@ body{
 }
 .header .logo {
     float: left;
-    margin-top: 18px;
-    width: 100px; /* Adjust the width as needed */
+    margin-top: 10px; /* Adjusted margin to align logo better with navbar */
+    width: 80px; /* Adjusted width to make the logo smaller */
     height: auto; /* Maintain aspect ratio */
 }
+
+
+@media (max-width: 768px) {
+    .header .logo {
+        width: 60px; /* Smaller logo on smaller screens */
+        margin-top: 8px;
+    }
+}
+
+
 
 .header .navbar {
 	background: none;
@@ -579,64 +589,77 @@ body{
 	height: 600px;
 	background-size: cover;
 	background-position: top center;
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 }
-.slider .single-slider .text{
-	margin-top:120px;
+
+.slider .single-slider .text {
+	margin-top: 120px;
 }
-.slider.index2 .single-slider .text{
-	margin-top:150px;
+
+.slider.index2 .single-slider .text {
+	margin-top: 150px;
 }
+
+/* Ensure consistent color for all sliders */
 .slider .single-slider h1 {
-	color: #2C2D3F;
+	color: #000000; /* Text color for headings */
 	font-size: 38px;
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
 	line-height: 42px;
 }
-.slider .single-slider h1 span{
-	color:#d3d609;
+
+.slider .single-slider h1 span {
+	color: #FFD700; /* Consistent gold color */
 }
+
 .slider .single-slider p {
-	color: #2C2D3F;
+	color: #000000; /* Text color for paragraphs */
 	margin-top: 27px;
 	font-weight: 400;
 }
-.slider .single-slider .button{
-	margin-top:30px;
+
+.slider .single-slider .button {
+	margin-top: 30px;
 }
-.slider .single-slider .btn{
-	color:#fff;
-	background:#1a76d1;
-	font-weight:500;
-	display:inline-block;
-	margin:0;
-	margin-right:10px;
+
+.slider .single-slider .btn {
+	color: #fff;
+	background: #1a76d1; /* Button background color */
+	font-weight: 500;
+	display: inline-block;
+	margin: 0;
+	margin-right: 10px;
 }
-.slider .single-slider .btn:last-child{
-	margin:0;
+
+.slider .single-slider .btn:last-child {
+	margin: 0;
 }
-.slider .single-slider .btn.primary{
-	background:#2C2D3F;
-	color:#fff;
+
+.slider .single-slider .btn.primary {
+	background: #2C2D3F; /* Primary button background color */
+	color: #fff;
 }
-.slider .single-slider .btn.primary:before{
-	background:#1A76D1;
+
+.slider .single-slider .btn.primary:before {
+	background: #1A76D1; /* Primary button before pseudo-element background color */
 }
+
 .slider .owl-carousel .owl-nav {
 	margin: 0;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-	margin-top:-25px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -25px;
 }
+
 .slider .owl-carousel .owl-nav div {
 	height: 50px;
 	width: 50px;
 	line-height: 50px;
 	text-align: center;
-	background: #1A76D1;
+	background: #1A76D1; /* Navigation background color */
 	color: #fff;
 	font-size: 26px;
 	position: absolute;
@@ -647,30 +670,36 @@ body{
 	padding: 0;
 	border-radius: 50%;
 }
-.slider .owl-carousel .owl-nav div:hover{
-	background:#2C2D3F;
-	color:#fff;
+
+.slider .owl-carousel .owl-nav div:hover {
+	background: #2C2D3F; /* Navigation hover background color */
+	color: #fff;
 }
-.slider .owl-carousel .owl-controls .owl-nav .owl-prev{
-	left:20px;
+
+.slider .owl-carousel .owl-controls .owl-nav .owl-prev {
+	left: 20px;
 }
-.slider .owl-carousel .owl-controls .owl-nav .owl-next{
-	right:20px;
+
+.slider .owl-carousel .owl-controls .owl-nav .owl-next {
+	right: 20px;
 }
 
 /* Slider Animation */
-.owl-item.active .single-slider h1{
-    animation: fadeInUp 1s both 0.6s;
+.owl-item.active .single-slider h1 {
+	animation: fadeInUp 1s both 0.6s;
 }
-.owl-item.active .single-slider p{
-    animation: fadeInUp 1s both 1s;
+
+.owl-item.active .single-slider p {
+	animation: fadeInUp 1s both 1s;
 }
-.owl-item.active .single-slider .button{
-    animation: fadeInDown 1s both 1.5s;
+
+.owl-item.active .single-slider .button {
+	animation: fadeInDown 1s both 1.5s;
 }
 /*===========================
 	End Hero Area CSS
 =============================*/
+
 
 /*=============================
 	Start Schedule CSS
@@ -949,108 +978,112 @@ body{
 /*===================
 	Why choose CSS
 =====================*/
-.why-choose .choose-left h3{
-	font-size:24px;
-	font-weight:600;
-	color:#2C2D3F;
-	position:relative;
-	padding-bottom:20px;
-	margin-bottom:24px;
+.why-choose {
+    background: #fff;
 }
-.why-choose .choose-left h3:before{
-	position:absolute;
-	content:"";
-	left:0;
-	bottom:0;
-	height:2px;
-	width:50px;
-	background:#1a76d1;
+
+.why-choose .choose-left h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2C2D3F;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 24px;
 }
-.why-choose .choose-left p{
-	margin-bottom:35px;
+
+.why-choose .choose-left h3:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: #1a76d1;
 }
-.why-choose .choose-left .list{}
+
+.why-choose .choose-left p {
+    margin-bottom: 35px;
+}
+
+.why-choose .choose-left .list {}
+
 .why-choose .choose-left .list li {
-	color: #868686;
-	margin-bottom: 12px;
+    color: #868686;
+    margin-bottom: 12px;
 }
-.why-choose .choose-left .list li:last-child{
-	margin-bottom:0px;
+
+.why-choose .choose-left .list li:last-child {
+    margin-bottom: 0;
 }
-.why-choose .choose-left .list li i{
-	height:15px;
-	width:15px;
-	line-height:15px;
-	text-align:center;
-	background:#1a76d1;
-	color:#fff;
-	font-size:14px;
-	border-radius:100%;
-	padding-left:2px;
-	margin-right:16px;
+
+.why-choose .choose-left .list li i {
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+    background: #1a76d1;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 100%;
+    padding-left: 2px;
+    margin-right: 16px;
 }
-/* Start Faq CSS */
-.why-choose{
-	background:#fff;
+
+.why-choose .choose-right {
+    position: relative;
 }
-.why-choose .choose-right{
-	height:100%;
-	width:100%;
-	background-image:url('img/video-bg.jpg');
-	background-size:cover;
-	background-position:center;
-	background-repeat:no-repeat;
-	position:relative;
+
+.why-choose .image-container {
+    margin-bottom: 20px; /* Space below each image container */
+    padding: 10px; /* Optional padding to ensure space around the image */
 }
-.why-choose .choose-right .video {
-	color: #fff;
-	height: 70px;
-	width: 70px;
-	line-height: 70px;
-	text-align: center;
-	border-radius: 100%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -35px;
-	margin-top: -35px;
-	font-size: 21px;
-	background: #1a76d1;
-	padding-left: 4px;
+
+.why-choose .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optional: adds rounded corners to the images */
 }
-.why-choose .choose-right .video:hover{
-	transform:scale(1.1);
+
+/* Add margin to ensure space between images */
+.why-choose .row {
+    margin-left: -15px;
+    margin-right: -15px;
 }
-.why-choose .video-image .waves-block .waves {
-	position: absolute;
-	width: 200px;
-	height: 200px;
-	background: #fff;
-	opacity: 0;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	border-radius: 100%;
-	-webkit-animation: waves 3s ease-in-out infinite;
-	animation: waves 3s ease-in-out infinite;
-	left: 50%;
-	margin-left: -100px;
-	top: 50%;
-	margin-top: -100px;
+
+.why-choose .col-lg-6 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.why-choose .video-image .waves-block .wave-1 {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
+
+.why-choose .col-lg-6:nth-of-type(2) .image-container {
+    margin-right: 15px; /* Space between the two images */
 }
-.why-choose .video-image .waves-block .wave-2 {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+
+.why-choose .col-lg-6:nth-of-type(3) .image-container {
+    margin-left: 15px; /* Space between the two images */
 }
-.why-choose .video-image .waves-block .wave-3 {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .why-choose .image-container {
+        margin-bottom: 15px; /* Reduced margin on tablets and smaller devices */
+    }
+
+    .why-choose .col-lg-6:nth-of-type(2) .image-container,
+    .why-choose .col-lg-6:nth-of-type(3) .image-container {
+        margin-left: 0; /* Remove left margin on tablets */
+        margin-right: 0; /* Remove right margin on tablets */
+    }
 }
-/*=======================
-	End Why choose CSS
-=========================*/
+
+@media (max-width: 576px) {
+    .why-choose .image-container {
+        margin-bottom: 10px; /* Further reduced margin on very small screens */
+    }
+}
+
+
 
 /*===============================
 	Start Call to action CSS
@@ -4215,12 +4248,30 @@ body{
 
 
 .mandela-image {
-	max-width: 300px;
-	height: auto;
-	float: right;
-	margin-left: 20px;
-	border-radius: 50%;
-  }
+    max-width: 100%; /* Ensures the image scales down on smaller screens */
+    height: auto; /* Maintains aspect ratio */
+    float: right; /* Keeps the image aligned to the right */
+    margin-left: 20px; /* Space between the image and text */
+    border-radius: 50%; /* Circular image */
+    width: 200px; /* Increased default width for larger screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mandela-image {
+        width: 140px; /* Larger size for tablets and smaller devices */
+        margin-left: 15px; /* Reduced margin on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .mandela-image {
+        width: 120px; /* Larger size for very small screens */
+        margin-left: 10px; /* Further reduced margin */
+    }
+}
+
+
 
 
   /* Adjust the spacing around the section */
