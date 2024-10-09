@@ -1,11 +1,5 @@
 /* =====================================
-Template Name: 	Mediplus.
-Author Name: Naimur Rahman
-Website: http://wpthemesgrid.com/
-Description: Mediplus - Doctor HTML Template.
-Version:	1.1
-========================================*/   
-/*======================================
+Simphiwe Nhlapo
 [ CSS Table of contents ]
 * Global CSS
 * Header CSS
@@ -4249,26 +4243,36 @@ body{
 
 
 .mandela-image {
-    max-width: 100%; /* Ensures the image scales down on smaller screens */
+    margin-left: 20px; /* Space between the text and the image */
+    width: 250px; /* Reduces the size of the image */
     height: auto; /* Maintains aspect ratio */
-    float: right; /* Keeps the image aligned to the right */
-    margin-left: 20px; /* Space between the image and text */
-    border-radius: 50%; /* Circular image */
-    width: 200px; /* Increased default width for larger screens */
+    border-radius: 15px; /* Rounded corners */
+	
 }
 
-/* Responsive adjustments */
+/* Ensures the content (text + image) stays aligned side by side */
+.content-wrapper {
+    display: flex; /* Aligns text and image side by side */
+    align-items: flex-start; /* Aligns the text with the top of the image */
+    justify-content: space-between; /* Distributes space evenly between text and image */
+}
+
+/* Adjusting text justification */
+.justified-text {
+    text-align: justify; /* Justifies text alignment */
+    line-height: 1.6; /* Adds space between lines for readability */
+    flex: 1; /* Allows the text to take up remaining space */
+}
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .mandela-image {
-        width: 140px; /* Larger size for tablets and smaller devices */
-        margin-left: 15px; /* Reduced margin on smaller screens */
+        width: 100%; /* Image takes full width on smaller screens */
+        margin-left: 0; /* Removes margin for smaller screens */
+        margin-top: 20px; /* Adds space below the text */
     }
-}
-
-@media (max-width: 576px) {
-    .mandela-image {
-        width: 120px; /* Larger size for very small screens */
-        margin-left: 10px; /* Further reduced margin */
+    .content-wrapper {
+        flex-direction: column; /* Stacks text and image on smaller screens */
     }
 }
 
